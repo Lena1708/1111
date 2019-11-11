@@ -1,8 +1,9 @@
+
 .nav-top1 {
-    margin-left: 220px;
+
 }
 .navtop2 li {
-    margin-left: 150px;
+  
     display: inline-block;
 }
 ul {
@@ -10,17 +11,8 @@ ul {
     margin: 0;
     padding: 0;
 }
-.container1 {
-    padding: 20px 20px 20px 40px;
-    margin-left: 420px;
-}
-.container2 {
-    padding: 20px 20px 20px 40px;
-    margin-left: 420px;
-}
-.container3 {
-    padding: 20px 20px 20px 40px;
-    margin-left: 420px;
+.container {
+    padding: 20px 20px 5px 40px;
 }
 .row1 {
     width: 21%;
@@ -47,10 +39,35 @@ ul {
     display: block;
     max-width: 300px;
     margin: auto;
+    background-color:#b7d7e8;
+    color: cornflowerblue;
+    font-weight: bold;
 }
 p { 
     text-align: center 
 }
-h3 { 
-    text-align: center 
+h4 { 
+    text-align: center;
+}
+img {
+    max-width: 110px;
+    max-height: 110px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.sidebar {
+    display: inline-block;
+    background-color: green;
+    width: 28%;
+    height: 100%;
+}
+.mainbar {
+    margin: 20px;
+    display: inline-block;
+    background-color: red;
+    width: 69%;
+    height: 100%;
 }
