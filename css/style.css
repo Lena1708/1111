@@ -16,24 +16,29 @@ ul {
 }
 .row1 {
     width: 21%;
-    height: 300px;
+    height: 350px;
     display: inline-block;
     background-color: aqua;
     box-sizing: border-box;
 }
 .row2 {
     width: 21%;
-    height: 300px;
+    height: 350px;
     display: inline-block;
     background-color:aqua;
     box-sizing: border-box;
 }
 .row3 {
     width: 21%;
-    height: 300px;
+    height: 350px;
     display: inline-block;
     background-color:aqua;
     box-sizing: border-box;
+}
+.doctorshortmenu {
+
+    margin-bottom: 40px;
+ 
 }
 .buttonprofession {
     display: block;
@@ -57,17 +62,22 @@ img {
     margin-right: auto;
     width: 50%;
 }
-
-.sidebar {
-    display: inline-block;
-    background-color: green;
-    width: 28%;
-    height: 100%;
-}
 .mainbar {
     margin: 20px;
     display: inline-block;
-    background-color: red;
+    background-color: grey;
     width: 69%;
     height: 100%;
+}
+.sidebar {
+    display: inline-block;
+    background-color: violet;
+    width: 28%;
+    height: 100%;
+}
+.lefticonmenu {
+    
+}
+.hospitalmenu {
+
 }
