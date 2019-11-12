@@ -12,33 +12,31 @@ ul {
     padding: 0;
 }
 .container {
-    padding: 20px 20px 5px 40px;
+    padding: 20px 20px 30px 40px;
 }
 .row1 {
     width: 21%;
-    height: 350px;
+    height: 300px;
     display: inline-block;
     background-color: aqua;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 .row2 {
     width: 21%;
-    height: 350px;
+    height: 300px;
     display: inline-block;
     background-color:aqua;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 .row3 {
     width: 21%;
-    height: 350px;
+    height: 300px;
     display: inline-block;
     background-color:aqua;
     box-sizing: border-box;
-}
-.doctorshortmenu {
-
-    margin-bottom: 40px;
- 
+    margin-bottom: 30px;
 }
 .buttonprofession {
     display: block;
@@ -72,12 +70,16 @@ img {
 .sidebar {
     display: inline-block;
     background-color: violet;
-    width: 28%;
+    width: 27%;
     height: 100%;
 }
-.lefticonmenu {
-    
+.btn-group-vertical {
+    display: block;
+    width: 100%;
 }
-.hospitalmenu {
-
+.containerhospital {
+    display: block;
+    border: 7px solid blue;
+    width: 100%;
+    height: 300px;
 }
