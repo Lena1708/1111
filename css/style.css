@@ -78,9 +78,9 @@ img {
     width: 100%;
 }
 .containerhospital {
-    display: block;
+    display: inline-block;
     border: 7px solid blue;
-    width: 27%;
+    width: 17%;
     height: 300px;
 }
 
