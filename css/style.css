@@ -1,37 +1,53 @@
-
-.nav-top1 {
-
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
 }
-.navtop2 li {
-  
+.maindiv {
+    display: block; 
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.div1child {
     display: inline-block;
+    width: 70px;
+    height: 100%;
+    background-color: rgb(11, 51, 110);
+    vertical-align: top;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.container {
-    padding: 20px 20px 30px 40px;
-}
-.row1 {
-    width: 21%;
-    height: 300px;
+.div2child {
     display: inline-block;
-    background-color: aqua;
-    box-sizing: border-box;
-    margin-bottom: 30px;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(248, 248, 202);
+    vertical-align: top;
 }
-.row2 {
-    width: 21%;
-    height: 300px;
+.div3child {
     display: inline-block;
-    background-color:aqua;
-    box-sizing: border-box;
-    margin-bottom: 30px;
+    width: calc(100% - 378px);
+    height: 100%;
+    background-color: rgb(148, 148, 235);
+    vertical-align: top;
 }
-.row3 {
-    width: 21%;
+.containerwithalldoctors {
+    display: block;
+    width: calc(100% - 378px);
+}
+.doctorsrow1 {
+    width: 90%;
+    display: block;
+}
+.doctorsrow2 {
+    width: 90%;
+    display: block;
+}
+.doctorsrow3 {
+    width: 90%;
+    display: block;
+}
+.doctorsshortid {
+    width: 20%;
     height: 300px;
     display: inline-block;
     background-color:aqua;
@@ -60,27 +76,3 @@ img {
     margin-right: auto;
     width: 50%;
 }
-.mainbar {
-    margin: 20px;
-    display: inline-block;
-    background-color: grey;
-    width: 69%;
-    height: 100%;
-}
-.sidebar {
-    display: inline-block;
-    background-color: violet;
-    width: 27%;
-    height: 100%;
-}
-.btn-group-vertical {
-    display: block;
-    width: 100%;
-}
-.containerhospital {
-    display: inline-block;
-    border: 7px solid blue;
-    width: 17%;
-    height: 300px;
-}
-
