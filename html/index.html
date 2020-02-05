@@ -13,133 +13,241 @@
 
 <body>
   <div class="maindiv">
-    <div class="div1child"></div
-      ><div class="div2child"></div
-      ><div class="div3child">
+    <div class="div1child">
+      
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="div1child__icon-bar">
+  <a class="active" href="#"><i class="fa fa-square-o"></i></a>
+  <a href="#"><i class="fa fa-graduation-cap"></i></a>
+  <a href="#"><i class="fa fa-bullhorn"></i></a>
+  <a href="#"><i class="fa fa-user"></i></a>
+  <a href="#"><i class="fa fa-heartbeat"></i></a>
+  <a href="#"><i class="fa fa-ambulance"></i></a>
+  <a href="#"><i class="fa fa-paper-plane-o"></i></a>
+  <a href="#"><i class="fa fa-cog"></i></a>
+  <a href="#"><i class="fa fa-smile-o"></i></a>
+  <a href="#"><i class="fa fa-briefcase"></i></a>
+  <a href="#"><i class="fa fa-plus-square"></i></a>
+
+
+</div>
+
+
+      
+      </div
+    ><div class="div2child">
+      
+      
+
+
+      <div class="div2child__sidebar">
+          <a href="#healthcare" class="div2child__sidebar_btntop btn-info btn-lg" role="button">
+          <span class="glyphicon glyphicon-heart"></span>Health Care</a>
+             </br>
+
+             <div class="div2child__sidebar4btn">
+
+          <a href="#hospitalperformance" class="div2child__sidebar_btn-group-vertical btn-default btn-lg" role="button">
+          <span class="glyphicon glyphicon-download"></span>Hospital Performance</a>
+             </br>
+          <a href="#patienthistory" class="div2child__sidebar_btn-group-vertical btn-default btn-lg" role="button">
+          <span class="glyphicon glyphicon-book"></span>Patient History</a>
+             </br>
+          <a href="#doctors" class="div2child__sidebar_btn-group-vertical btn-primary active btn-lg" role="button">
+          <span class="glyphicon glyphicon-folder-open"></span>Doctors</a>
+             </br>
+          <a href="#historyofdonation" class="div2child__sidebar_btn-group-vertical btn-default btn-lg" role="button">
+          <span class="glyphicon glyphicon-hourglass"></span>History of Donation</a> 
+        </div>
+      </div>
+         
+      
+      <div class="div2child__containerhospital">
+        <img src="./../img/Hospital.jpg" alt="doctor">
+          <h4>Appolo Hospital Ltd.</h4>
+            <p>Call: +023 4563 236</p>
+             <a href="#hospitalprofile" class="div2child__containerhospital-btn btn-default btn-lg" role="button">
+               HOSPITAL PROFILE</a>                       
+      </div>
+      
+      <div class="div2child__settings">
+        <a href="#settings" class="div2child__settings-btn btn-default btn-lg" role="button">
+          <span class="glyphicon glyphicon-tasks"></span>Settings</a>
+      </div>  
+
+
+
+    </div
+    ><div class="div3child">
+        <div class="topsearch">
+          <a href="#doctors">Doctors</a>
+           <form class="navbar-form" action="/action_page.php">
+          <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search Doctor">
+          <button type="submit" class="glyphicon glyphicon-search"></button>
+        </form>
+        </div>
+      </div>
+
+ 
+
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div class="topnav" id="myTopnav">
+        <a href="#all" class="active">All</a>
+        <a href="#cardiology">Cardiology</a>
+        <a href="#orthopedy">Orthopedy</a>
+        <a href="#concology">Concology</a>
+        <a href="#dermetology">Dermetology</a>
+        <a href="#sergery">Sergery</a>
+        <a href="#gynokology">Gynokology</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
       <div class="containerwithalldoctors">
         <!-- ROW 1 -->
         <div class="doctorsrow1">
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,5</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 1</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">NUROLOGIST</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call</button>
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call</button>
             </div>
           </div>
           <div class="doctorshortid">
-            <p><span class="glyphicon glyphicon-star"></span>5,0</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            <div class="docrating">
+              <p><span class="glyphicon glyphicon-star"></span>5,0</p>
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 2</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">CARDIOLOGIST</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call</button>
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call</button>
             </div>
           </div>
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,8</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 3</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">NUROLOGIST</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call</button>
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call</button>
             </div>
           </div>
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,3</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 4</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">THERAPIST</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call</button>
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call</button>
             </div>
           </div>
         </div>
         <!-- ROW 2 -->
         <div class="doctorsrow2">
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,9</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 5</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">DERMETOLOGIST</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call</button>
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call</button>
             </div>
           </div>
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,5</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 6</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">GYNOCOLOGY</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call</button>
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call</button>
             </div>
           </div>
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,5</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 7</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">NUROLOGIST</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call</button>
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call</button>
             </div>
           </div>
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,5</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 8</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">DERMETOLOGY</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call
               </button>
             </div>
           </div>
@@ -147,66 +255,74 @@
         <!-- ROW 3 -->
         <div class="doctorsrow3">
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,5</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 9</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">DERMETOLOGY</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Availability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Availability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call
               </button>
             </div>
           </div>
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>5,0</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 10</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">NUROLOGIST</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call
               </button>
             </div>
           </div>
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,8</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 11</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">DERMETOLOGIST</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call
               </button>
             </div>
           </div>
           <div class="doctorshortid">
+            <div class="docrating">
             <p><span class="glyphicon glyphicon-star"></span>4,3</p>
-            <img src="./../img/doctor.png" class="img-circle" alt="doctor">
+            </div>
+            <img src="./../img/doctor2.png" class="img-circle" alt="doctor">
             <h4>DOCTOR 12</h4>
             <p>Lorem ipsum dolor..</p>
             <button type="button" class="buttonprofession btn-info btn-sm">DERMETOLOGY</button>
             </br>
             <div class="btn-group" style="width:100%">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>Avilability
+              <button type="button" class="buttonavilability btn-default">
+                <span class="glyphicon glyphicon-user"></span> &nbsp; Avilability
               </button>
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-earphone"></span>Make a call
+              <button type="button" class="buttoncall btn-default">
+                <span class="glyphicon glyphicon-earphone"></span> &nbsp; Make a call
               </button>
             </div>
           </div>
