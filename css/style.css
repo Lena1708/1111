@@ -23,16 +23,16 @@ body {
 .div1child__icon-bar a {
     display: block;
     text-align: center;
-    transition: all 0.3s ease; /* Add transition for hover effects */
+    transition: all 0.4s ease; /* Add transition for hover effects */
     color: #63a9fe;
     font-size: 26px;
     padding: 20px 20px 20px 0px;
 }
 .div1child__icon-bar a:hover {
-    background-color: white; 
+    background-color: white;
 }
-.active {
-    background-color: yellow; /* Add an active/current color */
+.div1child__icon-bar_active {
+    background-color: #0160ee; 
 }
 
 
