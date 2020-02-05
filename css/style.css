@@ -17,24 +17,29 @@ body {
     vertical-align: top;
 }
 .div1child__icon-bar {
-    width: 40px;
-    background-color: #0069ff;
+    width: 70px;
+    height: 100%;
+    background: linear-gradient(45deg, #3689ff, #005de9);
 }
 .div1child__icon-bar a {
     display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
     text-align: center;
     transition: all 0.4s ease; /* Add transition for hover effects */
     color: #63a9fe;
     font-size: 26px;
-    padding: 20px 0px 20px 20px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 .div1child__icon-bar a:hover {
     background-color: white;
+    position: center;
 }
 .div1child__icon-bar_active {
-    background-color: #0160ee; 
+    background-color: #0160ee;
 }
-
 
 
 
@@ -47,13 +52,18 @@ body {
 }
 .div2child__sidebar_btntop {
     display: block;
-    width: 250px;
+    width: 80%;
     height: 60px;
     margin: 30px 25px 20px 25px;
     border-radius: 15px;
     color: #3779ca;
     background-color: #ebf1ff;
     text-align: left;
+}
+.div2child__sidebar_btntop a:hover {
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color:white;
+    width: 100%;
 }
 .div2child__sidebar_btn-group-vertical {
     display: inline-block;
@@ -65,9 +75,19 @@ body {
     background-color: white;
     text-align: left;
 }
+.div2child__sidebar_btn-group-vertical_active {
+    display: inline-block;
+    width: 80%;
+    height: 52px;
+    margin: 0px 25px 0px 25px;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    text-align: left;
+}
 .div2child__sidebar_btn-group-vertical a:hover {
-    background-color: yellow;
-    color: red;
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color: white;
 }
 .div2child__sidebar4btn {
     margin-bottom: 30px;
@@ -79,11 +99,12 @@ body {
     border-radius: 25px;
     margin: 25px;
     padding: 30px;
-    background-color: #d9ebff;
+    background: linear-gradient(to top, #d5e7ff, #f5fafe);
 }
 .div2child__containerhospital-btn {
+    width: 250px;
     color: #3d79c1;
-    background-color: #d9ebff;
+    background-color: #d0e4ff;
     font-weight: bold;
     font-size: 15px;
 }
@@ -93,10 +114,12 @@ body {
     color: #bbbec9;
     background-color: white;
     text-align: left;
+    border-top: 1px solid;
+    border-radius: 0;
 }
 .div2child__settings-btn a:hover {
-    background-color: yellow;
-    color: red;
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color:white;
 }
 
 
@@ -175,12 +198,12 @@ body {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color:blue;
+    background: linear-gradient(45deg, #0662f8, #009fff);
     color: white;
 }
 /* Add an active class to highlight the current page */
 .active {
-    background-color: #0187fe;
+    background: linear-gradient(45deg, #0168ff, #0695fe);
     color: white;
 }
 /* Hide the link that should open and close the topnav on small screens */
