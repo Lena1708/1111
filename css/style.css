@@ -286,6 +286,10 @@ contains should open and close the topnav (.icon) */
     -moz-border-radius:10px;
     border: 0;
 }
+.buttonprofession a:hover {
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color:white;
+}
 .buttonavilability {
     width: 49.2%;
     height: 40px;
