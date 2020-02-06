@@ -126,8 +126,6 @@ body {
 }
 .div2child__settings-btn {
     display: block;
-    box-sizing: border-box;
-    height: 200px;
     color: #bbbec9;
     background-color: white;
     text-align: left;
