@@ -100,17 +100,34 @@ body {
     margin: 25px;
     padding: 30px;
     background: linear-gradient(to top, #d5e7ff, #f5fafe);
+    position: relative;
+    font-size: 18px;
+}
+.div2child__containerhospital_colortext {
+    color: #97a9c1;
+    font-size: 16px;
+    padding-left: 25px;
 }
 .div2child__containerhospital-btn {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 250px;
-    color: #3d79c1;
+    border-radius: 0px 0px 25px 25px;
     background-color: #d0e4ff;
+    color: #3e7cc8;
     font-weight: bold;
     font-size: 15px;
-}
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
+}
 .div2child__settings-btn {
     display: block;
+    box-sizing: border-box;
+    height: 200px;
     color: #bbbec9;
     background-color: white;
     text-align: left;
@@ -120,9 +137,8 @@ body {
 .div2child__settings-btn a:hover {
     background: linear-gradient(45deg, #0662f8, #009fff);
     color:white;
+    text-decoration: none;
 }
-
-
 .div3child {
     display: inline-block;
     width: calc(100% - 378px);
