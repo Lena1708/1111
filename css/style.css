@@ -40,9 +40,6 @@ body {
 .div1child__icon-bar_active {
     background-color: #0160ee;
 }
-
-
-
 .div2child {
     display: inline-block;
     width: 300px;
@@ -54,16 +51,19 @@ body {
     display: block;
     width: 80%;
     height: 60px;
-    margin: 30px 25px 20px 25px;
+    margin: 30px 0px 20px 20px;
     border-radius: 15px;
     color: #3779ca;
     background-color: #ebf1ff;
     text-align: left;
+    font-size: 22px;
+    text-decoration: none;
 }
 .div2child__sidebar_btntop a:hover {
     background: linear-gradient(45deg, #0662f8, #009fff);
     color:white;
-    width: 100%;
+    text-decoration: none;
+    position: center;
 }
 .div2child__sidebar_btn-group-vertical {
     display: inline-block;
@@ -75,6 +75,12 @@ body {
     background-color: white;
     text-align: left;
 }
+.div2child__sidebar_btn-group-vertical a:hover {
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color: white;
+    text-decoration: none;
+    position: center;
+}
 .div2child__sidebar_btn-group-vertical_active {
     display: inline-block;
     width: 80%;
@@ -85,15 +91,17 @@ body {
     background: linear-gradient(45deg, #0662f8, #009fff);
     text-align: left;
 }
-.div2child__sidebar_btn-group-vertical a:hover {
-    background: linear-gradient(45deg, #0662f8, #009fff);
-    color: white;
+.div2child__sidebar_btn-group-vertical_active a:hover {
+    background: white;
+    color: blue;
+    text-decoration: none;
+    position: center;
 }
 .div2child__sidebar4btn {
     margin-bottom: 30px;
 }
 .div2child__containerhospital {
-    display: inline-block;
+    display: block;
     width: 250px;
     height: 300px;
     border-radius: 25px;
@@ -106,7 +114,17 @@ body {
 .div2child__containerhospital_colortext {
     color: #97a9c1;
     font-size: 16px;
-    padding-left: 25px;
+    padding-left: 15px;
+}
+.div2child__containerhospital_imgdiv {
+    display: block;
+    width: 100%;
+}
+.div2child__containerhospital_img {
+    display: block;
+    width: auto;
+    height: 80px;
+    margin: auto;
 }
 .div2child__containerhospital-btn {
     position: absolute;
@@ -122,7 +140,11 @@ body {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
-
+}
+.div2child__containerhospital-btn a:hover {
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color:white;
+    text-decoration: none;
 }
 .div2child__settings-btn {
     display: block;
@@ -134,7 +156,7 @@ body {
 }
 .div2child__settings-btn a:hover {
     background: linear-gradient(45deg, #0662f8, #009fff);
-    color:white;
+    color: white;
     text-decoration: none;
 }
 .div3child {
@@ -144,7 +166,7 @@ body {
     background-color: #fbfcff;
     vertical-align: top;
 }
-/* Add a black background color to the top navigation bar */
+
 .topsearch {
     overflow: hidden;
 }
@@ -159,10 +181,11 @@ body {
     text-decoration: none;
     font-size: 20px;
 }
-/* Change the color of links on hover */
 .topsearch a:hover {
-    background-color: blue;
-    color: white;
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color:white;
+    text-decoration: none;
+    border-radius: 25px;
 }
 /* Style the search box inside the navigation bar */
 .topsearch input[type=text] {
@@ -276,6 +299,8 @@ contains should open and close the topnav (.icon) */
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    position: relative;
+
 }
 .docrating {
     position: relative;
@@ -287,6 +312,29 @@ contains should open and close the topnav (.icon) */
     clip-path: polygon(100% 0%, 79% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
     font-size: 15px;
     text-indent: -10px;
+    text-align: center; 
+}
+.div3child__doctorshortid_img {
+    max-width: 110px;
+    max-height: 110px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.div3child__doctorshortid_docname {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    padding-bottom: 15px;
+    padding-left: 70px;
+}
+.div3child__doctorshortid_docadress {
+    display: inline-block;
+    color: #d7d9de;
+    font-size: 14px;
+    padding-left: 60px;
+    padding-bottom: 20px;
 }
 .buttonprofession {
     display: block;
@@ -302,7 +350,9 @@ contains should open and close the topnav (.icon) */
 }
 .buttonprofession a:hover {
     background: linear-gradient(45deg, #0662f8, #009fff);
-    color:white;
+    color: white;
+    transition: all 0.4s ease;
+    position: center;
 }
 .buttonavilability {
     width: 49.2%;
@@ -314,6 +364,10 @@ contains should open and close the topnav (.icon) */
     border: 0;
     background-color: #fbfcff;
     color: #cecfd4;
+    position: absolute;
+    bottom: -40px;
+    left: 0%;
+    transform: translateX(0%);
 }
 .buttoncall {
     width: 49.2%;
@@ -325,19 +379,20 @@ contains should open and close the topnav (.icon) */
     border: 0;
     background-color: #fbfcff;
     color: #cecfd4;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX( 1%);
 }
-
-p { 
-    text-align: center; 
+.buttonavilability a:hover {
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color: white;
+    transition: all 0.4s ease;
+    position: center;
 }
-h4 { 
-    text-align: center;
-}
-img {
-    max-width: 110px;
-    max-height: 110px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.buttoncall a:hover {
+    background: linear-gradient(45deg, #0662f8, #009fff);
+    color: white;
+    transition: all 0.4s ease;
+    position: center;
 }
