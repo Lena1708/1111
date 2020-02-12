@@ -69,6 +69,7 @@ body {
     height: 100%;
     background-color: #ffffff;
     vertical-align: top;
+    position: relative;
 }
 .sidebar-all {
     display: block;
