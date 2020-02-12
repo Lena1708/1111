@@ -69,8 +69,8 @@ body {
     height: 100%;
     background-color: #ffffff;
     vertical-align: top;
-    position: relative;
 }
+/* BLOCK 2 SIDEBAR TOP-all */
 .sidebar-all {
     display: block;
     width: 300px;
@@ -78,6 +78,7 @@ body {
     vertical-align: top;
     position: relative;
 }
+/* BLOCK 2 BTNTOP */
 .btntop {
     display: block;
     width: 250px;
@@ -109,7 +110,7 @@ body {
 .btntop:active > .btntop:hover {
     background-color: transparent !important;
 }
-/* SIDEBAR MENU WITH 4 BUTTONS */
+/* BLOCK 2 SIDEBAR TOP WITH 4 BUTTONS */
 .sidebar {
     display: block;
     width: 250px;
@@ -145,7 +146,7 @@ body {
 .sidebarbtn:active > .sidebarbtn:hover {
     background-color: transparent !important;
 }
-/* SIDEBAR BOTTOM MENU HOSPITAL LOGO */
+/* BLOCK 2 SIDEBAR-BOTTOM WITH HOSPITAL LOGO */
 .sidebarbottom {
     display: block;
     width: 300px;
@@ -209,7 +210,10 @@ body {
     background-color: transparent !important;
 }
 /* SETTINGS BUTTON */
-.settings-btn {
+
+
+
+.settings {
     display: block;
     width: 300px;
     height: 50px;
@@ -219,8 +223,8 @@ body {
     border-top: 1px solid;
     border-radius: 0;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 2px;
+    left: 2px;
 }
 .settings-btn-fa {
     padding: 2px;
