@@ -210,37 +210,36 @@ body {
     background-color: transparent !important;
 }
 /* SETTINGS BUTTON */
-
-
-
 .settings {
     display: block;
     width: 300px;
     height: 50px;
-    color: #bbbec9;
     background-color: white;
     text-align: left;
-    border-top: 1px solid;
+    font-size: 20px;
+    padding: 12px 12px 20px;
+    border-top: 1px solid #bbbec9;
     border-radius: 0;
     position: absolute;
-    bottom: 2px;
-    left: 2px;
+    bottom: 0px;
+    left: 0px;
 }
-.settings-btn-fa {
-    padding: 2px;
+.settings-fa {
+    color: #bbbec9;
 }
-.settings-btn a {
+.settings a {
     text-decoration: none;
+    color: #bbbec9;
 }
-.settings-btn:hover {
+.settings:hover {
     background-color:rgb(57, 252, 252);
     color:white;
 }
-.settings-btn:active {
+.settings:active {
     background: linear-gradient(45deg, #3689ff, #005de9);
     color: white;
 }
-.settings-btn:active > .settings-btn:hover {
+.settings:active > .settings:hover {
     background-color: transparent !important;
 }
 
