@@ -9,6 +9,7 @@ body {
     height: 100vh;
     background-color: red;
 }
+/* BLOCK 1 */
 .div1child {
     display: inline-block;
     width: 70px;
@@ -32,7 +33,10 @@ body {
     font-size: 26px;
     margin: auto;
     margin-bottom: 30px;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
 }
 .fa.div1child__icon-bar_fa {
     position: absolute;
@@ -42,111 +46,141 @@ body {
 }
 .div1child__icon-bar a:hover {
     background-color: white;
-    position: center;
+}
+.activeiconbar {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
 }
 .activeiconbar:active {
-    width: 70px;
     background: linear-gradient(45deg, #3689ff, #005de9);
     color: #fff;
     text-decoration: none;
     border-radius: 0;
 }
-.div1child__icon-bar a:active {
-    width: 70px;
-    background: linear-gradient(45deg, #3689ff, #005de9);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0;
+.activeiconbar:active > a:hover {
+    background-color: transparent !important;
 }
-.div2child {
+/* BLOCK 2 */
+.block2 {
     display: inline-block;
     width: 300px;
     height: 100%;
     background-color: #ffffff;
     vertical-align: top;
 }
-.div2child__sidebar_btntop {
+.sidebar-all {
     display: block;
-    width: 80%;
+    width: 300px;
+    height: 50%;
+    vertical-align: top;
+    position: relative;
+}
+.btntop {
+    display: block;
+    width: 250px;
     height: 60px;
-    margin: 30px 0px 20px 20px;
     border-radius: 15px;
     color: #3779ca;
     background-color: #ebf1ff;
     text-align: left;
     font-size: 22px;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+.btntop_fa {
+    padding: 20px 5px 20px 10px;
     text-decoration: none;
 }
-.div2child__sidebar_btntop a:hover {
-    background: linear-gradient(45deg, #0662f8, #009fff);
-    color:white;
+.btntop a {
     text-decoration: none;
-    position: center;
 }
-.div2child__sidebar_btn-group-vertical {
-    display: inline-block;
-    width: 80%;
-    height: 52px;
-    margin: 0px 25px 0px 25px;
+.btntop:hover {
+    background-color:rgb(57, 252, 252);
+}
+.btntop:active {
+    background: linear-gradient(45deg, #3689ff, #005de9);
+    color: #fff;
     border-radius: 15px;
-    color: #757381;
-    background-color: white;
-    text-align: left;
 }
-.div2child__sidebar_btn-group-vertical a:hover {
-    background: linear-gradient(45deg, #0662f8, #009fff);
-    color: white;
-    text-decoration: none;
-    position: center;
+.btntop:active > .btntop:hover {
+    background-color: transparent !important;
 }
-.div2child__sidebar_btn-group-vertical_active {
-    display: inline-block;
-    width: 80%;
-    height: 52px;
-    margin: 0px 25px 0px 25px;
-    border-radius: 15px;
-    color: white;
-    background: linear-gradient(45deg, #0662f8, #009fff);
-    text-align: left;
-}
-.div2child__sidebar_btn-group-vertical_active a:hover {
-    background: white;
-    color: blue;
-    text-decoration: none;
-    position: center;
-}
-.div2child__sidebar4btn {
-    margin-bottom: 30px;
-}
-.div2child__containerhospital {
+/* SIDEBAR MENU WITH 4 BUTTONS */
+.sidebar {
     display: block;
     width: 250px;
     height: 300px;
-    border-radius: 25px;
-    margin: 25px;
+    position: absolute;
+    top: 130px;
+    left: 25px;
+}
+.sidebarbtn {
+    display: block;
+    width: 250px;
+    height: 52px;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.sidebarbtn_fa {
+    padding: 18px 5px 20px 10px;
+    text-decoration: none;
+}
+.sidebarbtn a {
+    text-decoration: none;
+    color: rgb(94, 93, 93);
+}
+.sidebarbtn:hover {
+    background-color:rgb(57, 252, 252);
+}
+.sidebarbtn:active {
+    background: linear-gradient(45deg, #3689ff, #005de9);
+    color: white;
+    border-radius: 15px;
+}
+.sidebarbtn:active > .sidebarbtn:hover {
+    background-color: transparent !important;
+}
+/* SIDEBAR BOTTOM MENU HOSPITAL LOGO */
+.sidebarbottom {
+    display: block;
+    width: 300px;
+    height: 50%;
+    vertical-align: top;
+    position: relative;
+}
+.containerhospital {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 25px 25px 0px 0px;
+    margin: 0px 25px;
     padding: 30px;
     background: linear-gradient(to top, #d5e7ff, #f5fafe);
-    position: relative;
+    position: absolute;
     font-size: 18px;
 }
-.div2child__containerhospital_colortext {
+.containerhospital_colortext {
     color: #97a9c1;
     font-size: 16px;
     padding-left: 15px;
 }
-.div2child__containerhospital_imgdiv {
+.containerhospital_imgdiv {
     display: block;
     width: 100%;
 }
-.div2child__containerhospital_img {
+.containerhospital_img {
     display: block;
     width: auto;
     height: 80px;
     margin: auto;
 }
-.div2child__containerhospital-btn {
+.containerhospital-btn {
     position: absolute;
-    bottom: 0px;
+    top: 251px;
     left: 50%;
     transform: translateX(-50%);
     width: 250px;
@@ -159,24 +193,68 @@ body {
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.div2child__containerhospital-btn a:hover {
-    background: linear-gradient(45deg, #0662f8, #009fff);
-    color:white;
+.containerhospital-btn a {
     text-decoration: none;
 }
-.div2child__settings-btn {
+.containerhospital-btn:hover {
+    background-color:rgb(57, 252, 252);
+    color:white;
+}
+.containerhospital-btn:active {
+    background: linear-gradient(45deg, #3689ff, #005de9);
+    color: white;
+}
+.containerhospital-btn:active > .containerhospital-btn:hover {
+    background-color: transparent !important;
+}
+/* SETTINGS BUTTON */
+.settings-btn {
     display: block;
+    width: 300px;
+    height: 50px;
     color: #bbbec9;
     background-color: white;
     text-align: left;
     border-top: 1px solid;
     border-radius: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
-.div2child__settings-btn a:hover {
-    background: linear-gradient(45deg, #0662f8, #009fff);
-    color: white;
+.settings-btn-fa {
+    padding: 2px;
+}
+.settings-btn a {
     text-decoration: none;
 }
+.settings-btn:hover {
+    background-color:rgb(57, 252, 252);
+    color:white;
+}
+.settings-btn:active {
+    background: linear-gradient(45deg, #3689ff, #005de9);
+    color: white;
+}
+.settings-btn:active > .settings-btn:hover {
+    background-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .div3child {
     display: inline-block;
     width: calc(100% - 378px);
