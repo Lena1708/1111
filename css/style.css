@@ -101,11 +101,12 @@ body {
 }
 .btntop:hover {
     background-color:rgb(57, 252, 252);
+    color: white;
 }
 .btntop:active {
     background: linear-gradient(45deg, #3689ff, #005de9);
-    color: #fff;
     border-radius: 15px;
+    color: white;
 }
 .btntop:active > .btntop:hover {
     background-color: transparent !important;
@@ -242,23 +243,7 @@ body {
 .settings:active > .settings:hover {
     background-color: transparent !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* BLOCK3 */
 .div3child {
     display: inline-block;
     width: calc(100% - 378px);
@@ -266,12 +251,96 @@ body {
     background-color: #fbfcff;
     vertical-align: top;
 }
+/* Block "Doctors" and "Doctors Search"  */
+.topblock {
+    display: block;
+    width: calc(100% - 378px);
+    height: 60px;
+    background-color:violet;
+    position: relative;
+}
+.topdoctor a{
+    display: inline-block;
+    width: 100px; 
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+.topdoctor a {
+    text-decoration: none;
+}
+.topdoctor a:hover {
+    color: white;
+    background-color:rgb(57, 252, 252);
+}
+.topdoctor a:active {
+    background: linear-gradient(45deg, #3689ff, #005de9);
+    color: white;
+}
+.topdoctora a:active > .topdoctor:hover {
+    background-color: transparent !important;
+}
+.searchdoctor {
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+* {box-sizing: border-box;}
+form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 0px;
+  background: white;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+input:focus {
+  width: 300px;
+}
+button {
+  width: 42px;
+  height: 42px;
+  color: grey;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
 
+
+
+
+
+
+
+
+/*
 .topsearch {
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+ Style the links inside the navigation bar 
 .topsearch a {
     float: left;
     display: block;
@@ -287,7 +356,7 @@ body {
     text-decoration: none;
     border-radius: 25px;
 }
-/* Style the search box inside the navigation bar */
+ Style the search box inside the navigation bar 
 .topsearch input[type=text] {
     float: right;
     padding: 6px;
@@ -299,7 +368,7 @@ body {
     font-size: 17px;
 }
 
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+ When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally 
 @media screen and (max-width: 600px) {
     .topsearch a, .topsearch input[type=text] {
         float: none;
@@ -314,15 +383,27 @@ body {
     }
 }
 
+*/
 
 
-/* Add a black background color to the top navigation */
+
+
+
+
+
+
+
+
+
+
+/*
+ Add a black background color to the top navigation 
 .topnav {
     background-color: #ffffff;
     overflow: hidden;
     border-radius: 25px;
 }
-/* Style the links inside the navigation bar */
+ Style the links inside the navigation bar 
 .topnav a {
     float: left;
     display: block;
@@ -333,22 +414,22 @@ body {
     text-transform: uppercase;
     font-size: 17px;
 }
-/* Change the color of links on hover */
+ Change the color of links on hover 
 .topnav a:hover {
     background: linear-gradient(45deg, #0662f8, #009fff);
     color: white;
 }
-/* Add an active class to highlight the current page */
+ Add an active class to highlight the current page 
 .active {
     background: linear-gradient(45deg, #0168ff, #0695fe);
     color: white;
 }
-/* Hide the link that should open and close the topnav on small screens */
+ Hide the link that should open and close the topnav on small screens 
 .topnav .icon {
     display: none;
 }
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("All"). Show the link that 
-contains should open and close the topnav (.icon) */
+ When the screen is less than 600 pixels wide, hide all links, except for the first one ("All"). Show the link that 
+contains should open and close the topnav (.icon) 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -356,8 +437,8 @@ contains should open and close the topnav (.icon) */
       display: block;
     }
   }
- /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes 
- the topnav look good on small screens (display the links vertically instead of horizontally) */
+  The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes 
+ the topnav look good on small screens (display the links vertically instead of horizontally) 
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -371,6 +452,12 @@ contains should open and close the topnav (.icon) */
       text-align: left;
     }
   }
+  
+  */
+
+
+
+
 .containerwithalldoctors {
     display: block;
     width: 100%; 
